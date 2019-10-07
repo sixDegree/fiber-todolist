@@ -1,24 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import TodoList from './TodoList'
+import ToggleButton from './ToggleButton'
+import ToggleButtonCSSTransition from './ToggleButtonCSSTransition'
+import ToggleButtonTransitionGroup from './ToggleButtonTransitionGroup'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="main">
+        <hr/>
+        <TodoList/>
+        <hr/>
+        
+        <ToggleButton/>
+        <hr/>
+        <ToggleButtonCSSTransition/>
+        <hr/>
+        <ToggleButtonTransitionGroup/>
+        
+      </div>
     </div>
   );
 }
